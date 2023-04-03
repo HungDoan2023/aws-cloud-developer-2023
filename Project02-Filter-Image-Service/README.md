@@ -65,7 +65,7 @@ server running http://localhost:8082
 press CTRL+C to stop server
 ```
 8) Open Postman tool and let's verify the `filteredimage` endpoint on locally
-[Verify `filteredimage` endpoint with Postman tool](./images/verify-filteredimage-endpoint-postman.png)   
+[Verify `filteredimage` endpoint with Postman tool](https://github.com/HungDoan2023/aws-cloud-developer-2023/tree/main/Project02-Filter-Image-Service/images/verify-filteredimage-endpoint-postman.png)   
 
 9) Create a Elastic Beanstalk Service and Configuration with NodeJS
 9.1)  Create a deployable build package
@@ -121,7 +121,7 @@ Enter Application Name
 deploy:
 artifact: ./www/Filter-Image-Archive.zip
 ```
-[Modify config.yml file](./images/modify-config-elastic-beanstalk.png)
+[Modify config.yml file](https://github.com/HungDoan2023/aws-cloud-developer-2023/tree/main/Project02-Filter-Image-Service/images/modify-config-elastic-beanstalk.png)
 
 
 9.5) Create `eb create`
@@ -172,23 +172,37 @@ Printing Status:
 2023-04-03 06:31:15    INFO    Successfully launched environment: Project02-Filter-Image-Service-dev2
 ```
 9.6) Check Elastic Beanstalk Application and Environment
-[Elastic Beanstalk Application Health Check](./images/Elastic-Beanstalk-Application-Health-Check.PNG)
-[Elastic Beanstalk Environment](./images/Elastic-Beanstalk-Environment-1.PNG)
+[Elastic Beanstalk Application Health Check](https://github.com/HungDoan2023/aws-cloud-developer-2023/tree/main/Project02-Filter-Image-Service/images/Elastic-Beanstalk-Application-Health-Check.PNG)
+[Elastic Beanstalk Environment](https://github.com/HungDoan2023/aws-cloud-developer-2023/tree/main/Project02-Filter-Image-Service/images/Elastic-Beanstalk-Environment-1.PNG)
 
-9.7) Verify FilteredImage endpoint on AWS ElasticBeanstalk via Postman tool
-9.7.1) FilteredImage endpoint: `http://project02-filter-image-service-dev2.us-east-1.elasticbeanstalk.com/filteredimage`
+9.7) Deploy a zip file on AWS Elastic Beanstalk
+Execute statement `eb deploy Project02-Filter-Image-Service-dev2` as log information below:
+```
+PS C:\Courses\Cloud_Developer\Projects\aws-cloud-developer-2023\Project02-Filter-Image-Service> eb deploy Project02-Filter-Image-Service-dev2
+Uploading Project02-Filter-Image-Service/app-230403_145505698935.zip to S3. This may take a while.
+Upload Complete.
+2023-04-03 07:55:08    INFO    Environment update is starting.      
+2023-04-03 07:55:12    INFO    Deploying new version to instance(s).
+2023-04-03 07:55:28    INFO    Instance deployment completed successfully.
+2023-04-03 07:55:35    INFO    New application version was deployed to running EC2 instances.
+2023-04-03 07:55:35    INFO    Environment update completed successfully.
+```
+If we have any code change, we are able to build and then deploy code change to running application with `eb deploy`
 
-9.7.2) Verify endpoint via Postman tool
+9.8) Verify FilteredImage endpoint on AWS ElasticBeanstalk via Postman tool
+9.8.1) FilteredImage endpoint: `http://project02-filter-image-service-dev2.us-east-1.elasticbeanstalk.com/filteredimage`
+
+9.8.2) Verify endpoint via Postman tool
 Import collection into Postman tool and test `Project02-Filter-Image-Service\Project02-Filter-Image-Service.postman_collection.json`
-[Verify FilteredImage endpoint on Elastic Beanstalk](./images/Verify-FilteredImage-Endpoint-Postman-On-ElasticBeanstalk.png)
+[Verify FilteredImage endpoint on Elastic Beanstalk](https://github.com/HungDoan2023/aws-cloud-developer-2023/tree/main/Project02-Filter-Image-Service//images/Verify-FilteredImage-Endpoint-Postman-On-ElasticBeanstalk.png)
 
 
 
 ### Structure of Filter Image Service Project
-[Structure of Filter Image Service Project](./images/structure-of-Filter-Image-Service-project.PNG)
+[Structure of Filter Image Service Project](https://github.com/HungDoan2023/aws-cloud-developer-2023/tree/main/Project02-Filter-Image-Service/images/structure-of-Filter-Image-Service-project.PNG)
 
 
-### Thanks
-_ Thanks the course I have got some AWS technology and how to apply on my working and it's worthy spend time for getting knowledge
-_ Thanks trainer & mentor who has contributed on this course
-_ Happy AWS technology
+### Many Thanks
+1) Thanks the course I have got some AWS technology and how to apply on my working and it's worthy spend time for getting knowledge
+2) Thanks trainer & mentor who has contributed on this course
+3) Happy AWS technology
