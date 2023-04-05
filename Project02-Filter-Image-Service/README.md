@@ -65,7 +65,7 @@ server running http://localhost:8082
 press CTRL+C to stop server
 ```
 8) Open Postman tool and let's verify the `filteredimage` endpoint on locally
-[Verify `filteredimage` endpoint with Postman tool](./images/verify-filteredimage-endpoint-postman.png)   
+![Verify `filteredimage` endpoint with Postman tool](./images/verify-filteredimage-endpoint-postman.png)   
 
 9) Create a Elastic Beanstalk Service and Configuration with NodeJS
 9.1)  Create a deployable build package
@@ -121,7 +121,7 @@ Enter Application Name
 deploy:
   artifact: ./www/Filter-Image-Archive.zip
 ```
-[Modify config.yml file](./images/modify-config-elastic-beanstalk.png)
+![Modify config.yml file](./images/modify-config-elastic-beanstalk.png)
 
 
 9.5) Create `eb create`
@@ -172,9 +172,9 @@ Printing Status:
 2023-04-03 06:31:15    INFO    Successfully launched environment: Project02-Filter-Image-Service-dev2
 ```
 9.6) Check Elastic Beanstalk Application and Environment
-[Elastic Beanstalk Application Health Check](./images/Elastic-Beanstalk-Application-Health-Check.PNG)
-[Elastic Beanstalk Environment List](./images/Elastic-Beanstalk-Environment-1.png)
-[Elastic Beanstalk Environment Name](./images/Elastic-Beanstalk-Environment-Name.PNG)
+![Elastic Beanstalk Application Health Check](./images/Elastic-Beanstalk-Application-Health-Check.PNG)
+![Elastic Beanstalk Environment List](./images/Elastic-Beanstalk-Environment-1.png)
+![Elastic Beanstalk Environment Name](./images/Elastic-Beanstalk-Environment-Name.PNG)
 
 9.7) Deploy a zip file on AWS Elastic Beanstalk
 Execute statement `eb deploy Project02-Filter-Image-Service-dev2` as log information below:
@@ -195,7 +195,7 @@ If we have any code change, we are able to build and then deploy code change to 
 
 9.8.2) Verify endpoint via Postman tool on Elastic Beanstalk
 Import collection into Postman tool and test `Project02-Filter-Image-Service\Project02-Filter-Image-Service.postman_collection.json`
-[Verify FilteredImage endpoint on Elastic Beanstalk](./images/Verify-FilteredImage-Endpoint-Postman-On-ElasticBeanstalk.png)
+![Verify FilteredImage endpoint on Elastic Beanstalk](./images/Verify-FilteredImage-Endpoint-Postman-On-ElasticBeanstalk.png)
 
 
 ### Structure of Filter Image Service Project
