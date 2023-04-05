@@ -199,7 +199,7 @@ Import collection into Postman tool and test `Project02-Filter-Image-Service\Pro
 
 
 ### Structure of Filter Image Service Project
-[Structure of Filter Image Service Project](./images/structure-of-Filter-Image-Service-project.PNG)
+![Structure of Filter Image Service Project](./images/structure-of-Filter-Image-Service-project.PNG)
 
 
 ### Many Thanks
